@@ -1,0 +1,40 @@
+.Movie {
+    display: flex;
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 20px;
+
+    img {
+        margin: 0 0 10px 0;
+        transform: scale(0.8);
+    }
+
+    .txt {
+        padding: 20px;
+        height: 250px;
+
+        .mTitle {
+            font-size: 21px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+        }
+        
+        p {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 1.2;
+            margin: 0 0 10px 0;
+        }
+
+        ul {
+            font-size: 19px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+
+            li {
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+}

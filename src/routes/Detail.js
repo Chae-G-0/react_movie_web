@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Movie from "../component/Movie";
 
 const Detail = () => {
   const { id } = useParams();
@@ -12,7 +13,14 @@ const Detail = () => {
   useEffect(() => {
     getMovie();
   }, []);
-  return <h1>Detail</h1>;
+  return (
+    <div className="Dtail">
+      <h2>Detail</h2>
+      <div className="inner">
+        <img src={Movie.coverImg} alt="" />
+      </div>
+    </div>
+  );
 };
 
 export default Detail;
